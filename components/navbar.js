@@ -95,7 +95,7 @@ class CustomNavbar extends HTMLElement {
         }
       </style>
       <nav>
-        <a href="/" class="logo">THE VELVET CLAW</a>
+        <a href="/" class="logo">THE VELVET CLAcker</a>
         <button class="mobile-menu-btn">
           <i data-feather="menu"></i>
         </button>
