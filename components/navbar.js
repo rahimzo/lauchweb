@@ -100,12 +100,12 @@ class CustomNavbar extends HTMLElement {
           <i data-feather="menu"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="/gallery.html">Gallery</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/booking.html" class="book-now">Book Now</a></li>
+          <li><a href="/lauchweb">Home</a></li>
+          <li><a href="/lauchweb/services.html">Services</a></li>
+          <li><a href="/lauchweb/gallery.html">Gallery</a></li>
+          <li><a href="/lauchweb/about.html">About</a></li>
+          <li><a href="/lauchweb/contact.html">Contact</a></li>
+          <li><a href="/lauchweb/booking.html" class="book-now">Book Now</a></li>
         </ul>
       </nav>
     `;
