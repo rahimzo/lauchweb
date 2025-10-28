@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<a href="gallery.html">Gallery</a>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | The Velvet Claw</title>
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
+
+    <!-- Components -->
+    <script src="components/navbar.js" defer></script>
+    <script src="components/footer.js" defer></script>
 </head>
+
 <body class="bg-white font-montserrat text-gray-800">
+    
+    <!-- ✅ GitHub Pages Compatible Navigation -->
     <custom-navbar></custom-navbar>
 
     <main class="py-20 px-4 max-w-7xl mx-auto">
@@ -22,9 +30,10 @@
             <div class="w-20 h-0.5 bg-gray-800 mx-auto mt-6"></div>
         </div>
 
+        <!-- Filter Buttons -->
         <div class="mb-12 flex justify-center">
             <div class="inline-flex rounded-md shadow-sm">
-                <button type="button" class="px-4 py-2 text-sm font-medium border border-gray-200 bg-white text-black hover:bg-gray-50 focus:z-10 focus:outline-none">All</button>
+                <button type="button" class="px-4 py-2 text-sm font-medium border border-gray-200 bg-black text-white focus:z-10 focus:outline-none">All</button>
                 <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none">Editorial</button>
                 <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none">Natural</button>
                 <button type="button" class="px-4 py-2 text-sm font-medium border-t border-b border-gray-200 bg-white text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none">Seasonal</button>
@@ -32,8 +41,10 @@
             </div>
         </div>
 
+        <!-- Gallery Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <!-- Editorial Collection -->
+            
+            <!-- Editorial -->
             <div class="group relative overflow-hidden">
                 <img src="http://static.photos/black/640x360/5" alt="Editorial nails" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -53,7 +64,7 @@
                 </div>
             </div>
 
-            <!-- Natural Collection -->
+            <!-- Natural -->
             <div class="group relative overflow-hidden">
                 <img src="http://static.photos/minimal/640x360/1" alt="Natural nails" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -73,7 +84,7 @@
                 </div>
             </div>
 
-            <!-- Seasonal Collection -->
+            <!-- Seasonal -->
             <div class="group relative overflow-hidden">
                 <img src="http://static.photos/black/640x360/8" alt="Seasonal nails" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
                 <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
@@ -92,22 +103,22 @@
                     <span class="text-white font-semibold">Spring Collection</span>
                 </div>
             </div>
+
         </div>
     </main>
 
     <custom-footer></custom-footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script>
         feather.replace();
-        
-        // Gallery filter functionality
+
         const filterButtons = document.querySelectorAll('.inline-flex button');
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
                 filterButtons.forEach(btn => btn.classList.remove('bg-black', 'text-white'));
                 this.classList.add('bg-black', 'text-white');
-                // In a real implementation, this would filter the gallery items
             });
         });
     </script>
