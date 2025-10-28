@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Claw | London's Premier Nail Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="bg-white font-montserrat text-gray-800">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <img src="http://static.photos/black/1200x630/42" alt="Luxury nail art" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-playfair text-white mb-6">London's Nail Art Atelier</h1>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Where precision meets artistry in the heart of London</p>
+            <a href="/booking.html" class="bg-white text-black px-8 py-3 font-semibold hover:bg-gray-100 transition duration-300">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- Signature Services -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-playfair text-3xl md:text-4xl mb-4">Our Signature Services</h2>
+            <div class="w-20 h-0.5 bg-gray-800 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                <div class="h-64 bg-gray-100 mb-4 flex items-center justify-center">
+                    <i data-feather="heart" class="w-12 h-12"></i>
+                </div>
+                <h3 class="font-playfair text-xl mb-2">Luxury Spa Manicure</h3>
+                <p class="text-gray-600 mb-4">90 min | £75</p>
+                <p class="text-gray-700">Indulge in our signature treatment featuring exfoliation, massage, and premium polish.</p>
+            </div>
+            <div class="border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                <div class="h-64 bg-gray-100 mb-4 flex items-center justify-center">
+                    <i data-feather="star" class="w-12 h-12"></i>
+                </div>
+                <h3 class="font-playfair text-xl mb-2">BIAB Builder Gel</h3>
+                <p class="text-gray-600 mb-4">120 min | £95</p>
+                <p class="text-gray-700">Our most requested service for strong, natural-looking nails with lasting results.</p>
+            </div>
+            <div class="border border-gray-200 p-6 hover:shadow-lg transition duration-300">
+                <div class="h-64 bg-gray-100 mb-4 flex items-center justify-center">
+                    <i data-feather="pen-tool" class="w-12 h-12"></i>
+                </div>
+                <h3 class="font-playfair text-xl mb-2">Editorial Nail Art</h3>
+                <p class="text-gray-600 mb-4">From £120</p>
+                <p class="text-gray-700">Bespoke designs created by our London Fashion Week nail artists.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Studio -->
+    <section class="bg-gray-50 py-20 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="font-playfair text-3xl md:text-4xl mb-6">The Velvet Claw Philosophy</h2>
+                <p class="text-gray-700 mb-6">Founded in London's creative heart, we blend technical precision with artistic vision. Our atelier is a sanctuary where every detail matters.</p>
+                <p class="text-gray-700 mb-8">We source only the finest products from independent brands that share our commitment to quality and sustainability.</p>
+                <a href="/about.html" class="border border-black px-8 py-3 font-semibold hover:bg-black hover:text-white transition duration-300">Our Story</a>
+            </div>
+            <div class="h-96 bg-gray-200">
+                <img src="http://static.photos/minimal/1024x576/12" alt="Studio interior" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-playfair text-3xl md:text-4xl mb-4">Recent Creations</h2>
+            <div class="w-20 h-0.5 bg-gray-800 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="/gallery.html" class="group">
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="http://static.photos/black/640x360/1" alt="Nail design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <a href="/gallery.html" class="group">
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="http://static.photos/black/640x360/2" alt="Nail design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <a href="/gallery.html" class="group">
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="http://static.photos/black/640x360/3" alt="Nail design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+            <a href="/gallery.html" class="group">
+                <div class="aspect-square bg-gray-100 overflow-hidden">
+                    <img src="http://static.photos/black/640x360/4" alt="Nail design" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </a>
+        </div>
+        <div class="text-center mt-12">
+            <a href="/gallery.html" class="border border-black px-8 py-3 font-semibold hover:bg-black hover:text-white transition duration-300">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-black text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl mb-4">Client Love</h2>
+                <div class="w-20 h-0.5 bg-white mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Amelia C.</h4>
+                            <p class="text-gray-400 text-sm">Chelsea</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The editorial designs I received were featured in Vogue UK. Absolute perfection."</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">James L.</h4>
+                            <p class="text-gray-400 text-sm">Shoreditch</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"As a photographer, I appreciate the attention to detail. My hands have never looked better."</p>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Priya K.</h4>
+                            <p class="text-gray-400 text-sm">Mayfair</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The BIAB treatment lasts so long without chipping. Worth every penny for busy professionals."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
