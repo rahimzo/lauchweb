@@ -56,9 +56,9 @@ class CustomNavbar extends HTMLElement {
         .nav-links a:hover:after {
           width: 100%;
         }
-        .book-now {
-          background-color: white;
-          color: white;
+        .book-low {
+          background-color: black;
+          color: red;
           padding: 0.5rem 1.5rem;
           border-radius: 0;
           font-weight: 500;
@@ -100,7 +100,7 @@ class CustomNavbar extends HTMLElement {
           <i data-feather="menu"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="/lauchweb/">Home</a></li>
+          <li><a href="rahimzo.github.io/lauchwebs/">Home</a></li>
           <li><a href="/lauchweb/services.html">Services</a></li>
           <li><a href="/lauchweb/gallery.html">Gallery</a></li>
           <li><a href="/lauchweb/about.html">About</a></li>
