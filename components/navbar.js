@@ -57,7 +57,7 @@ class CustomNavbar extends HTMLElement {
           width: 100%;
         }
         .book-now {
-          background-color: black;
+          background-color: white;
           color: white;
           padding: 0.5rem 1.5rem;
           border-radius: 0;
@@ -65,7 +65,7 @@ class CustomNavbar extends HTMLElement {
           transition: all 0.3s ease;
         }
         .book-now:hover {
-          background-color: #fffff;
+          background-color: #333;
         }
         .mobile-menu-btn {
           display: none;
@@ -100,7 +100,7 @@ class CustomNavbar extends HTMLElement {
           <i data-feather="menu"></i>
         </button>
         <ul class="nav-links">
-          <li><a href="https://rahimzo.github.io/lauchweb/">Home</a></li>
+          <li><a href="/lauchweb/">Home</a></li>
           <li><a href="/lauchweb/services.html">Services</a></li>
           <li><a href="/lauchweb/gallery.html">Gallery</a></li>
           <li><a href="/lauchweb/about.html">About</a></li>
